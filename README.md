@@ -1,2 +1,4 @@
 # python-code-community-challenge
-This is a community challenge and when we finish a code, we share it here. 
+Hello Everyone, 
+
+This is a community challenge and when we finish a code, we'll share it here.
