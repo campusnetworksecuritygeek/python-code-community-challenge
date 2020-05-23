@@ -15,7 +15,11 @@
       ios_config:
         lines:
           - ip route 192.168.13.0 255.255.255.0 10.10.10.3
-
+          
+    - name: SAVE CONFIGURATION
+      ios_config:
+        save_when: modified
+    
     - name: VERIFICATION ACL
       ios_command:
         commands:
