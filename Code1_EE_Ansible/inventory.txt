@@ -1,0 +1,9 @@
+[ciso_device]
+dv1 ansible_host=192.168.17.159
+dv2 ansible_host=192.168.17.158
+
+[all:vars]
+ansible_connection=ssh
+ansible_user=username
+ansible_connection=network_cli
+ansible_network_os=ios
