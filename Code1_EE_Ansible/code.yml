@@ -1,0 +1,27 @@
+
+---
+- name: CONFIGURATION/VERFICATION ACL and SAVE CONFIGURATION
+  hosts: ciso_device
+  gather_facts: false
+  connection: local
+
+  tasks:
+    - name: CONFIGURATION ACL
+      ios_config:
+        lines:
+          - access-list 109 permit tcp host 1.1.1.159 host 2.2.2.159 eq www
+
+    - name: ADD ROUTE
+      ios_config:
+        lines:
+          - ip route 192.168.13.0 255.255.255.0 10.10.10.3
+
+    - name: VERIFICATION ACL
+      ios_command:
+        commands:
+          - show access-lists 109
+
+
+      register: print_output
+
+    -  debug: var=print_output.stdout_lines
