@@ -1,9 +1,4 @@
-# python-code-community-challenge
-Hello Everyone,
+# Project for Network Automation
 
-This is a community challenge for network automation and when we finish a Python programming, we'll share it here.
-
-Thank you to support this small community and don't hesitate to report an issue. 
-
-Regards,
-Campus Network and Security Geek+
+The goal of this project is share with network engineer, the code that will need in order to automatize some task.
+However, all this code is tested in production environments.
